@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         item.add(ApiItem("api 가져오기"))
         item.add(ApiItem("api 가져오기"))
         item.add(ApiItem("api 가져오기"))
+
         binding.recycler.layoutManager = LinearLayoutManager(this)
         binding.recycler.adapter = ApiAdapter(this,item)
 

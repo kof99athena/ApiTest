@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.com.android.application)
     alias(libs.plugins.org.jetbrains.kotlin.android)
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -39,6 +40,12 @@ android {
 }
 
 dependencies {
+
+    implementation(libs.gson) //api를 위한 라이브러리
+    implementation(libs.retrofit) //api를 위한 라이브러리
+    implementation(libs.converter.gson) //api를 위한 라이브러리
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9") //경량 스레드 코루틴
 
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
