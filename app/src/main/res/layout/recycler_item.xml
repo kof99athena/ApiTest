@@ -7,9 +7,12 @@
 
     <TextView
         android:id="@+id/tv"
-        android:text="dddddd"
+        android:text="movieNm"
         android:textSize="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+
+
 
 </androidx.cardview.widget.CardView>
